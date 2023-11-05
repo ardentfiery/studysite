@@ -1,0 +1,121 @@
+.motivationpage{
+    background-color:#196236;
+    /* height: 100%; */
+    width: 100%;
+
+   
+}
+.upperdiv{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
+    position: sticky;
+    top:0;
+    background-color:#196236;
+    /* background-color:red; */
+    z-index: 999;
+
+}
+.underline{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+.quotequote{
+    cursor: pointer;
+}
+.quoteimage{
+    cursor:pointer;
+}
+.quotediv{
+    min-height: 100vh;
+    margin-top: 40px;
+    display: flex;
+    background-color:#196236;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    overflow-x: hidden;
+    /* background-color: #fff; */
+   width: 100%;
+   padding-bottom: 10px;
+    
+    
+}
+.quotesappear{
+    font-size: 22px;
+    color: #196236;
+    background-color: #fff;
+    width: 65vw;
+    padding:10px 10px;
+    height: 55px;
+    border-radius: 15px;
+    
+}
+.imagediv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+    place-items: center;
+    padding-top: 25px;
+    background-color: #196236;
+    min-height: 100vh;
+   
+}
+.imagequotes{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    box-shadow: 6px 6px black;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    
+}
+.imagequotes:hover{
+    transform: scale(1.1);
+}
+.loaderlogo{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 600px){
+    .quotesappear{
+        font-size: 15px;
+        color: #196236;
+        background-color: #fff;
+        width: 80vw;
+        padding:10px 10px;
+        height: 55px;
+        border-radius: 15px;
+        
+    }
+    .quotediv{
+        width: 100vw;
+        padding: 0px;
+    }
+    .quotediv::-webkit-scrollbar{
+        display: none;
+    }
+    .imagediv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100vw;
+        place-items: center;
+        padding-top: 25px;
+        background-color: #196236;
+        min-height: 100vh;
+        margin-left: 0px;
+       
+    }
+    .imagequotes{
+        margin-right: 0px;
+        height: 150px;
+        width: 150px;
+    }
+}

@@ -1,0 +1,104 @@
+.pdfbook{
+    /* background-color: red; */
+
+}
+.react-pdf__Page{
+    /* background-color: red; */
+    width: fit-content;
+    height: 100vh;
+}
+.react-pdf__Page__textContent {
+    height: 10px !important;
+    display: none;
+}
+.react-pdf__Page__annotations {
+    height: 10px !important;
+}
+.showbook{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.buttonandpage{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    gap:20px;
+}
+.pdfpagehold{
+    overflow: hidden;
+}
+.bookholder{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:#196236;
+}
+.pdfimages{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    box-shadow: 3px 3px 4px black;
+}
+.pdfimages:hover{
+    transform: scale(1.05);
+}
+.onebook{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.singlebook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.readbutton{
+    background-color:white;
+    color:#196236;
+}
+.personalpage{
+    background-color: #196236;
+}
+@media screen and (max-width:600px) { 
+
+    .bookholder{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color:#196236;
+}
+
+.react-pdf__Page__canvas{
+width: 100% !important;
+}
+.react-pdf__Page{
+    height: 100% !important;
+    width: 100% !important;
+    
+   
+}
+.react-pdf__Document {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+.react-pdf__Document{
+    height: fit-content !important;
+  }
+  .react-pdf__Page{
+    background-color: red !important;
+    height: fit-content !important;
+  }
+  .textLayer,.annotationLayer{
+    display: none;
+  }
+  .react-pdf__Page__canvas{
+    width: 100vw !important;
+  }
+
+}
+
+
+

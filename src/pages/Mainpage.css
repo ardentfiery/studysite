@@ -1,0 +1,316 @@
+.Homepage {
+    /* background: linear-gradient(180deg, #DDEAAB 0%, rgba(191, 238, 210, 0.95) 98.29%); */
+    background: linear-gradient(
+        180deg,
+        rgba(175, 241, 202, 0.95) 0%,
+        rgba(108, 190, 141, 0.95) 84.59%
+    );
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 0; */
+}
+.date_goal {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.date {
+    margin-left: 30px;
+    padding-top: 20px;
+    position: absolute;
+    left: 0;
+}
+.date p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #196236;
+}
+.goal {
+    margin-top: 32px;
+}
+.goal_today {
+    background-color: #196236;
+    height: 60px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 6px 8px #487f5e;
+    font-size: 30px;
+}
+.img_holder {
+    /* background: #000; */
+
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 35px;
+}
+
+.main_image img {
+    height: 450px;
+    width: 500px;
+    display: block;
+    line-height: 0;
+    /* background-color: #fff; */
+}
+.dive_study {
+    position: absolute;
+
+    bottom: 75px;
+    background-color: #196236;
+    height: 60px;
+    width: fit-content;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0px 4px #000;
+    font-size: 30px;
+}
+.clock {
+    margin-top: -6px;
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.timer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.timer {
+    font-size: 80px;
+    color: #196236;
+}
+.motivation {
+    font-size: 22px;
+    color: #196236;
+    background-color: #fff;
+    width: fit-content;
+    padding: 10px 10px;
+    height: 55px;
+    border-radius: 20px;
+    box-shadow: 0 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.clock_motivation {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: flex-end;
+    margin-top: 1px;
+    height: fit-content;
+    width: 100vw;
+    /* background-color:red; */
+}
+.clock {
+    position: absolute;
+    left: 20px;
+}
+
+.rightbar {
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: linear-gradient(
+        180deg,
+        #114d29 0%,
+        rgba(25, 98, 54, 0.64) 86.46%,
+        rgba(25, 98, 54, 0.8) 99.99%,
+        rgba(25, 98, 54, 0) 100%
+    );
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 3.6rem;
+    height: fit-content;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    right: 10px;
+    top: 20px;
+    z-index: 999;
+}
+.rightbar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+.rightbar p {
+    font-size: 11.2px;
+}
+.leftside {
+    background: linear-gradient(
+        181deg,
+        #2a9354 -13.75%,
+        rgba(25, 98, 54, 0) 98.9%
+    );
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 20px;
+    height: 90vh;
+    flex-shrink: 0;
+    position: absolute; /*position absolute le teslai xuttai banaidinxan aru element bata*/
+}
+.fullscreen > img {
+    transform: scale(1);
+    right: 50px;
+    bottom: 30px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 999; /*yesle chai maathi lyaidinxa element lai position absolute garda xuttai float gareko hunxa tyo tala gako hunxa soo zindex narkahda tesko priority kam bhako hunxa yo rakhesi balla yo particular element ma focus garxa*/
+    transition: all 0.3s ease-in-out;
+}
+.fullscreen > img:hover {
+    transform: scale(1.08);
+}
+.rightbar p:hover {
+    color: rgb(134, 213, 134);
+    transform: scale(1.1);
+}
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .date_goal {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .Homepage {
+        height: 100vh;
+        width: 100vw;
+        overflow: scroll;
+        /* overflow: hidden; */
+    }
+    .goal_today {
+        background-color: #196236;
+        height: 40px;
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 6px 8px #487f5e;
+        font-size: 20px;
+        /* margin-top: 30px; */
+    }
+    .goal {
+        margin-top: 60px;
+    }
+    .rightbar {
+        /* position: absolute;
+        border-radius: 20px;
+        border: 1px solid #000;
+        background: linear-gradient(180deg, #114D29 0%, rgba(25, 98, 54, 0.64) 86.46%, rgba(25, 98, 54, 0.80) 99.99%, rgba(25, 98, 54, 0.00) 100%);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 3.6rem;
+        height: fit-content;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:40px;
+        right:10px;
+        top: 150px;
+        z-index: 999; */
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        z-index: 999;
+    }
+    .burger {
+        height: 30px;
+        width: 30px;
+    }
+    .rightshow {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        top: 0px;
+        z-index: 1;
+    }
+    .righthide {
+        display: none;
+    }
+
+    .main_image img {
+        margin-top: 0px;
+        height: 280px;
+        width: 300px;
+        /* background-color: #fff; */
+    }
+    .dive_study {
+        position: absolute;
+
+        bottom: 40px;
+        background-color: #196236;
+        height: 40px;
+        width: 180px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        box-shadow: 0px 2px #000;
+        font-size: 15px;
+    }
+    .timer {
+        font-size: 35px;
+        margin-top: 20px;
+        /* background-color: #fff; */
+    }
+    .clock_motivation {
+        margin-top: 10px;
+       margin-left: 10px;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .clock {
+        /* background-color: #fff; */
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        left: 0px;
+        margin-left: 0px;
+    }
+
+    .motivation {
+        /* margin-bottom:-180px; */
+        width: 310px;
+        font-size: 15px;
+        height: 64px;
+    }
+    .fullscreen {
+        display: none;
+    }
+    .Homepage {
+        overflow: hidden;
+    }
+}

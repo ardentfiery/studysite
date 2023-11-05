@@ -1,0 +1,127 @@
+.todoholder{
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+   
+}
+.todo_section{
+    overflow-y: scroll;
+    height: 75vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  
+    
+    /* background-color: red; */
+   
+}
+.todo_section::-webkit-scrollbar{
+    display: none;
+}
+.topmost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding-top: 50px;
+}
+.inputfield>input{
+    height: 50px;
+    width: 400px;
+    background-color: white;
+    outline: none;
+    border:0px;
+    color: black;
+    font-size: 20px;
+    padding-left: 20px;
+    border-bottom: 3px solid #126936;
+}
+.inputfield>input::placeholder{
+    color: gray;
+    /* font-size: 20px; */
+}
+.todobtn{
+    background-color: #126936;
+    width: 90px;
+    outline: none;
+   
+}
+.todobtn:focus{
+    outline:none;
+}
+.addedtodo{
+    color:white;
+    
+    width: 40vw;
+    padding: 12px;
+    border-radius: 5px;
+}
+.tickedtodo{
+    background-color:#FF9130;
+
+}
+.untickedtodo{
+    background-color: #126936;
+}
+.singletodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-top: 60px;
+}
+.todoicons>img{
+    height: 30px;
+    width: 26px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.lastdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.lastdiv>p{
+    width: 20vw;
+    background-color: #126936;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    padding:20px;
+    border-radius: 50px 0px 50px 0px;
+    height: 70px;
+    font-size: 20px;
+    box-shadow: 10px 10px 4px #124025;
+}
+@media screen and (max-width: 600px) {
+    .inputfield input{
+        height: 50px;
+        width: 220px;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    .todobtn{
+        width: 70px;
+    }
+    .lastdiv{
+        margin-top: 100px;
+    }
+    .lastdiv p{
+        
+        width: 70vw;
+        font-size: 17px;
+        bottom: 120px;
+        padding: 20px;
+        left: 45px;
+        bottom: 20px;
+    }
+    .todo_section{
+        width: 100vw;
+    }
+    .singletodo{
+        width: 100%;
+    
+    }
+    .addedtodo{
+        width: 65%;
+    }
+}
